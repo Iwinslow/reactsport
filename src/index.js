@@ -4,8 +4,9 @@ import App from "./App"
 import {Provider} from "react-redux"
 import {BrowserRouter} from 'react-router-dom'
 import store from "./state/store"
+import { ChakraProvider } from '@chakra-ui/react'
 
 // import * as serviceWorker from "./serviceWorker"
 
 
-ReactDOM.render(<BrowserRouter><App/></BrowserRouter>, document.getElementById("root"))
+ReactDOM.render( <BrowserRouter><ChakraProvider><App/></ChakraProvider></BrowserRouter>, document.getElementById("root"))

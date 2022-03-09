@@ -1,8 +1,17 @@
-import { setUser } from "./state/user";
-import { useDispatch } from "react-redux";
+import Register from "./component/Register"
+import { Route, Routes } from "react-router-dom";
+
 
 const App = () => {
-  return <h1>Hola mundo</h1>;
+  return (<>
+   
+    <Routes>
+      {/* <Route path="/" element={}/>  
+      <Route path="/login" element={}/>  */}
+      <Route path="/register" element={<Register/>}/> 
+    </Routes>
+  </>
+  )
 };
 
 export default App;
