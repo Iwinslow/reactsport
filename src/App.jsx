@@ -1,8 +1,12 @@
 import { setUser } from "./state/user";
 import { useDispatch } from "react-redux";
+import Login from "./component/Login"
+
 
 const App = () => {
-  return <h1>Hola mundo</h1>;
+  return (
+    
+  )
 };
 
 export default App;
